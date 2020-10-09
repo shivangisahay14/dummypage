@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mystery Rooms</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://www.innerve-igdtuw.com/innerve_logo.png" type="image/x-icon">
+    <link rel = "stylesheet" href = "instrpopupadded.css" type = "text/css">
+     
+    <style>
+    
+    </style>
+</head>
+<body>
+    
+
+    <video  playsinline autoplay muted loop>
+<source src="harypotter_edited.mp4" type="video/mp4">
+<!--<source src="http://thenewcode.com/assets/videos/fashion.mp4" type="video/mp4">-->
+</video>
+
+    <audio id="myAudio">
+  <source src="harypotter_edited.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+    
+    <header>
+    <img class = "img-fluid  float-right" src = "https://www.freepnglogos.com/uploads/hogwarts-logo-png/hogwarts-logo-shadopro-deviantart-0.png"  width = "100px" alt="hogwarts logo shadopro deviantart">
+    </header>
+    
+    <section class = "d-none d-lg-block">
+    <div class = "container-fluid px-0">
+        <div class = "row">
+            <div class = "col-12 heading text-center mt-5 ml-0" style = "font-size: 5rem">
+                <h1> The Hogwarts Mystery</h1>
+               
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class = "row">
+            <div class = "col-12">
+                <div class="buttons" style = "margin-top: 200px;">
+                    <button data-pop="first"  class="show instr" style = "margin-left:-150px">INSTRUCTIONS</button>
+                </div>
+
+                <div class="popup first">
+                    <div class="alert">
+                        <h2 ><strong>INSTRUCTIONS</strong></h2>
+                        <h3>
+                        1. The Triwizard Tournament will be taking place at Hogwarts this year.<br>
+                        2. It will have 3 stages:<br>
+                            <p style = "margin-left: 16px">
+                        a. Getting golden egg from the dragon.<br>
+                        b. Saving one person from the Merpeople at the bottom of the lake.<br>
+                        c. The Triwizard maze.
+                            </p>
+                        3. But before entering the main tournament you will have to pass a basic round.<br>
+                        4. Before each coding question, you will encounter a harry potter related question. If answered correctly, you would get a hint to the coding problem. However, even if answered wrong, you would still be redirected to the coding question.<br>
+                        5. NOTE : It is advisable to play via laptop.
+                        </h3>
+                        <span class="close">X</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-12 text-center" style = "margin-top: 170px;" >
+                
+                
+<!--                <a role="button" href = "../Level1Page1/level1page1.html" style="margin-left: -120px" class="btn btn-dark move" >ENTER A WIZARDING WORLD</a> -->
+                
+
+                <div id="app-cover">
+                    <div class="row">
+                        <div class="toggle-button-cover">
+                            <div class="button-cover">
+                                
+                                <a role="button" href = "../Level1Page1/level1page1.html" style="margin-left: -120px" class="btn btn-dark move" >ENTER A WIZARDING WORLD</a>
+                                
+                                <div class="button sound r" id="button-3" style="margin-top: -40px;">
+                                    <input type="checkbox" class="checkbox" id="myCheck" onclick="myFunction()"/>
+                                    <div class="knobs">
+                                    <i class="fas fa-play"></i>
+                                    </div>
+                                    <div class="layer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> 
+        </div>
+    </div>
+    </section>
+    
+        <section class = " d-lg-none">
+    <div class = "container-fluid px-0" style = "font-size: 5rem">
+        <div class = "row">
+            <div class = "col-12 heading text-center mt-5 ml-0">
+                <span class = "hogwarts"> The Hogwarts Mystery</span>
+               
+            </div>
+        </div>
+    </div>
+        <div class="container">
+            <div class = "row">
+                <div class = "col-12">
+                    <div class="buttons" style = "margin-top: 170px;">
+                        <button data-pop="first"  class="show">INSTRUCTIONS</button>
+                    </div>
+
+                    <div class="popup first" >
+                        <div class="alert"  >
+                            <h2><strong>INSTRUCTIONS</strong></h2><h3 style = "font-size: 13px;">
+                            1. The Triwizard Tournament will be taking place at Hogwarts this year.<br>
+                            2. It will have 3 stages:<br>
+                            <p style = "margin-left: 16px">
+                             a. Getting golden egg from the dragon.<br>
+                             b. Saving one person from the Merpeople at the bottom of the lake.<br>
+                             c. The Triwizard maze.
+                            </p>
+                            3. But before entering the main tournament you will have to pass a basic round.<br>
+                            4. Before each coding question, you will encounter a harry potter related question. If answered correctly, you would get a hint to the coding problem. However, even if answered wrong, you would still be redirected to the coding question.<br>
+                        	5. NOTE : It is advisable to play via laptop.
+                        </h3>
+                            <span class="close">X</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "container">
+        <div class = "row">
+            <div class = "col-12 text-center " style = "margin-top: 100px;" >
+                <a role="button" href = "../Level1Page1/level1page1.html" class="btn btn-dark" >ENTER A WIZARDING WORLD</a> 
+<!--                <button type="button" class="btn btn-dark move">ENTER A WIZARDING WORLD</button>-->
+                <button type="button" class="btn btn-dark ml-3">
+                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" onclick="playAudio()" class="bi bi-volume-up " fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zM6 5.04L4.312 6.39A.5.5 0 0 1 4 6.5H2v3h2a.5.5 0 0 1 .312.11L6 10.96V5.04z"/>
+  <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+  <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+  <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z"/>
+</svg>
+                </button>
+                
+            </div> 
+        </div>
+    </div>
+    </section>
+    
+    
+    <script>
+        var x = document.getElementById("myAudio"); 
+
+        function playAudio() { 
+          x.play(); 
+        } 
+
+    </script>
+    
+    <script type="text/javascript">
+        function myFunction() {
+          var checkBox = document.getElementById("myCheck");
+          var x = document.getElementById('myAudio')
+          function playAudio() {
+            x.play();
+          }
+          function pauseAudio() {
+            x.pause();
+          }
+          if (checkBox.checked == true){
+            playAudio();
+          } 
+          else {
+            pauseAudio();
+          }
+        }
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script> 
+        <script src="popup/popup.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+    <script src="https://use.fontawesome.com/d2bb98fb71.js"></script>s
+</body>
+</html>

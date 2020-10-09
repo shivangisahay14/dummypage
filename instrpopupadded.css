@@ -1,0 +1,363 @@
+@font-face {
+  font-family: Moderne Sans;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/moderne_sans.woff2)
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #000;
+  background-size: cover;
+}
+video { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  text-align: right;
+  color: white;
+  transition: .4s;
+}
+/*
+header:hover {
+  background: rgba(255,255,255,0.8);
+  color: #000;
+}
+*/
+
+img{
+    text-align: left;
+    padding-right: 1rem;
+    padding-top: 1rem;
+
+}
+
+
+h1 {
+    font-family:harrypotter, sans-serif;
+    width: 100%;
+    font-weight: 200;
+    color: white;
+    font-size: 5rem;
+    position: fixed;
+    text-shadow: 4px 2px black;
+}
+heading{
+    
+}
+.hogwarts{
+    font-family:harrypotter, sans-serif;
+    width: 100%;
+    font-weight: 200;
+    color: white;
+    font-size: 3rem;
+    left:0px;
+    position: fixed;
+    text-shadow: 4px 2px black;
+}
+
+.instr {
+  font-family:harrypotter, sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 3rem;
+    position: fixed;
+    text-shadow: 4px 2px black;
+}
+
+
+/*            // RESPONSIVE INSTRUCTIONS HEADING*/
+.instr_sm{
+    font-family:harrypotter, sans-serif;
+  width: 100%;
+    font-weight: 100;
+    font-size: 2rem;
+    position: fixed;
+    text-shadow: 4px 2px black;
+}
+
+.rest {
+  font-family:Moderne Sans, sans-serif;
+  width: 100%;
+    font-weight: 100;
+color: white;
+    font-size: 2rem;
+  text-align: left;
+    position: fixed;
+/*    margin-top: 260px;*/
+    margin-left: 1rem;
+    text-shadow: 4px 2px black;
+}
+
+
+
+/*            // RESPONSIVE INSTRUCTION TEXT*/
+.rest_sm{
+    font-family:Moderne Sans, sans-serif;
+  width: 100%;
+    font-weight: 100;
+color: white;
+    font-size: 1.3rem;
+  text-align: left;
+    position: fixed;
+/*    margin-top: 260px;*/
+    margin-left: 1rem;
+    text-shadow: 4px 2px black;
+}
+
+
+
+@font-face{
+    font-family: 'harrypotter';
+    src : url(fonts/parry-hotter/ParryHotter.ttf);
+    font-style:normal;
+    font-weight: 200;
+}
+
+@font-face{
+    font-family: 'harrypotter1';
+    src : url(fonts/HigherJump-8MZ7M.ttf);
+    font-style:normal;
+    font-weight: 150;
+}
+
+@font-face{
+    font-family: 'harrypotter';
+    src : url(fonts/WelcomeSummer-GOqXP.ttf);
+    font-style:normal;
+    font-weight: 100;
+}
+/*
+h1{
+    font-family: harrypotter;
+    font-weight: 200;
+    font-size: 92px;
+    top:40%;
+}
+*/
+.instr{
+    font-family: harrypotter1;
+    font-weight: 150;
+    font-size: 30px;
+}
+/*
+.instr {
+  font-family:harrypotter1, sans-serif;
+  width: 100%;
+    font-weight: 150;
+    color: white;
+    font-size: 3rem;
+  text-align: left;
+    position: fixed;
+    margin-top: 200px;
+    text-shadow: 4px 2px black;
+}
+*/
+
+.info{
+    font-family: harrypotter;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+button{
+/*    position: fixed;*/
+    box-shadow: 5px 0.7px #888888;
+}
+
+div.buttons {
+    text-align: center;
+    margin: 30px auto;
+}
+
+
+button.show {
+    background: #383752;
+/*        #3772A5;*/
+    color: #fff;
+/*    text-shadow: 2px 1px black;*/
+    border: 1px solid #fff;
+    padding: 15px;
+    outline: none;
+    user-select: none;
+    border-radius: 10px;
+/*    margin: 0px 0px 0px -30px;*/
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button.show:hover {
+    background-color: #375A2D;
+/*    color:#000;*/
+    text-shadow: 6px 6px black;
+}
+
+.popup {
+    background-color: rgb(0,0,0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.popup .alert {
+    background-color: #fff;
+    color: #000;
+    width: 70%;
+    height: 70%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    /*text-align: center;*/
+    position: fixed;
+    top: 15%;
+    left: 15%;
+    /*margin-top: -150px;
+    margin-left: -150px;*/
+    cursor: default;
+}
+
+.popup .alert h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.popup .alert h3 {
+    margin-top: 30px;
+    margin-left: 20px;
+    user-select: none;
+    font-size: 20px;
+}
+
+.popup .alert .close {
+    background-color: #d90429;
+    color: #FFF;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 0 10px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+}
+                        /* Audio Toogle */
+.button-cover, .knobs, .layer
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.sound
+{
+    position: relative;
+    top: 50%;
+    width: 74px;
+    height: 36px;
+    margin: -17px 350px 0  650px;
+    overflow: hidden;
+}
+
+.button.r, .button.r .layer
+{
+    border-radius: 100px;
+}
+
+.checkbox
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.knobs
+{
+    z-index: 2;
+}
+
+.layer
+{
+    width: 100%;
+    background-color: #505050;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+#button-3 .knobs:before
+{
+/*    content: '\23EF';*/
+    content: "\f04b" !important;
+font-family: FontAwesome !important;
+    font-weight: 900;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    background-color: black;
+    border-radius: 50%;
+    transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+
+#button-3 .checkbox:active + .knobs:before
+{
+    width: 46px;
+/*    border: 1px 1px skyblue;*/
+/*    border-radius: 100px;*/
+}
+
+/*
+input[type="checkbox" i] {
+    border: 1px 1px skyblue;
+    background-color: skyblue;
+}
+*/
+#button-3 .checkbox:checked:active + .knobs:before
+{
+    margin-left: -26px;
+}
+
+#button-3 .checkbox:checked + .knobs:before
+{
+/*    font-family: 'Font Awesome 5 Free';*/
+/*    content: "\f061";*/
+    content: "\f04c" !important;
+    font-family: FontAwesome !important;
+    left: 37px;
+/*    background-color: black;*/
+/*    font-size: 18px;*/
+    font-weight: 900;
+}
+
+#button-3 .checkbox:checked ~ .layer
+{
+    background-color: green;
+}
